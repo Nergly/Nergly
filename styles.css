@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    color: #00FFAE;
+}
+
+/* Background Overlay */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('your-cool-animated-background.gif') center/cover no-repeat, 
+                radial-gradient(circle, rgba(14,14,14,1) 0%, rgba(0,0,0,1) 100%);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Social Icon Bar */
+.social-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background: rgba(14, 14, 14, 0.9);
+    border-right: 2px solid #00FFAE;
+    padding-right: 15px;
+    z-index: 1000;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #00FFAE;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* Specific Platform Colors */
+.twitch { color: rgba(100, 65, 165, 0.8); }
+.kick { color: rgba(0, 255, 0, 0.8); }
+.discord { color: rgba(114, 137, 218, 0.8); }
+.youtube { color: rgba(255, 0, 0, 0.8); }
+.twitter { color: rgba(29, 161, 242, 0.8); }
+.tiktok { color: rgba(105, 201, 208, 0.8); }
+.instagram { color: rgba(193, 53, 132, 0.8); }
+.spigotmc { color: rgba(243, 156, 18, 0.8); }
+.github { color: rgba(0, 0, 0, 0.8); }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background: transparent;
+}
+
+.logo h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 20px #00FFAE, 0 0 40px #00FFAE;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Main Content Area */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Twitch Stream Section */
+.twitch-stream {
+    margin-bottom: 50px;
+}
+
+.twitch-stream h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.twitch-embed iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Minecraft Development Section */
+.minecraft-dev {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.minecraft-dev h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.minecraft-dev p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+.dev-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dev-projects .project {
+    width: 300px;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dev-projects .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dev-projects .project p,
+.dev-projects .project ul {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.dev-projects .project a {
+    color: #00FFAE;
+}
+
+.dev-projects .github-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.github-link i {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0e0e0e;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
