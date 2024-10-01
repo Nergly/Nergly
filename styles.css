@@ -172,6 +172,51 @@ main {
     margin-right: 10px;
 }
 
+
+.project {
+    width: 300px;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project:hover .project-logo {
+    transform: scale(1.05);
+}
+
+.project a {
+    color: #00FFAE;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
 /* Footer */
 footer {
     padding: 20px;
